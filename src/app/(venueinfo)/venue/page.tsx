@@ -4,8 +4,8 @@ import { Suspense } from "react";
 import { LinearProgress } from "@mui/material";
 import CardPanel from "@/components/CardPanel";
 
-export default function Venue() {
-    const venues = getVenues()
+export default async function Venue() {
+    const venues = await getVenues()
 
     return (
         <main className="text-center p-5">
